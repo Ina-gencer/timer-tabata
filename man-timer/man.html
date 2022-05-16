@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мужской таймер</title>
+    <link rel="stylesheet" href="man.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,900;1,100;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="box">
+        <p class="text ">ТРЕНИРОВКА</p>
+        <p class="startTime">4:00</p>
+            <p class="random">Раунды</p>
+            <p class="display"> <span>08</span></p>
+
+        <button class="play anim">СТАРТ </button>
+        <br>
+        <button class="stop anim">СТОП</button> 
+
+	</div>
+
+
+  
+<audio id="player" loop>
+    <source src="tabata.mp3" type="audio/mp3">
+    </audio>
+
+<video autoplay="autoplay" loop="loop" muted defaultMuted  id="myVideo" playsinline >
+<source src="man.mp4" type="video/mp4">
+</video>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+
+    <script src="man.js"></script>
+</body>
+</html>
